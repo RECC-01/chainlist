@@ -5,29 +5,30 @@
 Submit a PR that adds a new file to the [constants/additionalChainRegistry folder](https://github.com/DefiLlama/chainlist/tree/main/constants/additionalChainRegistry). The new file should be named `chainid-{chainid_number}.js` and the contents should follow this structure:
 ```
 {
-  "name": "Ethereum Mainnet",
-  "chain": "ETH",
+  "name": "RECCNETWORK",
+  "chain": "RECC",
   "rpc": [
-    "https://eth.llamarpc.com",
+    "https://rpc.reccnetwork.com",
+    "http://46.224.198.52:8545"
   ],
   "faucets": [],
   "nativeCurrency": {
-    "name": "Ether",
-    "symbol": "ETH",
+    "name": "Regulatory Technical Standard",
+    "symbol": "RTS",
     "decimals": 18
   },
-  "features": [{ "name": "EIP155" }, { "name": "EIP1559" }],
-  "infoURL": "https://ethereum.org",
-  "shortName": "eth",
-  "chainId": 1,
-  "networkId": 1,
-  "icon": "ethereum",
-  "explorers": [{
-    "name": "etherscan",
-    "url": "https://etherscan.io",
-    "icon": "etherscan",
-    "standard": "EIP3091"
-  }]
+  "infoURL": "https://reccnetwork.com",
+  "shortName": "recc",
+  "chainId": 24885,
+  "networkId": 24885,
+  "icon": "recc",
+  "explorers": [
+    {
+      "name": "RECC Explorer",
+      "url": "https://explorer.reccnetwork.com",
+      "standard": "EIP3091"
+    }
+  ]
 }
 ```
 
